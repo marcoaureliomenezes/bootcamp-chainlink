@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+ 
+  bootcamp_chainlink:
+    image: bootcamp_chainlink:1.0
+    build: ./
+    restart: always
+    volumes:
+      - ./src:/app
+    container_name: bootcamp_chainlink
